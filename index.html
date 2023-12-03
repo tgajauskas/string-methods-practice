@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Metodai 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>String Metodai 2</h1>
+    <div class="content">
+        <!-- 1st -->
+        <h2>Pirma užduotis</h2>
+        <p><span>Sąlyga:</span> sukurk du input'us - vieną, kur vartotojas įves savo vardą; kitą - skaičių. Pirma, patikrink ar skaičius sveikas (jei ne - alert). Jei sveikas, po apačia sukurk h1 elementą kur vardas bus atkartotas tiek kartų, kiek skaičius nurodo.</p><br>
+        <div class="container">
+            <span>Sprendimas:</span>
+            <input id="inputName" type="text" placeholder="Įveskite savo vardą..." required>
+            <span>bei</span>
+            <input id="inputNumber" type="number" placeholder="Įveskite skaičių..." required>
+            <span>ir spauskite mygtuką</span>
+            <button onclick="checkInput()">OK</button>
+            <span>.</span>
+            <div id="result"></div>
+        </div>
+        <!-- 2nd -->
+        <h2>Antra užduotis</h2>
+        <p><span>Sąlyga:</span> sukurk input, kur vartotojas įves savo vardą. Įvedus - alert'ink kokio ilgio yra vardas. Tačiau užtikrink, kad priekyje ir gale nebūtų įskaičiuoti tarpeliai.</p>
+        <div class="container">
+            <span>Sprendimas:</span>
+            <input id="secondInputName" type="text" placeholder="Įveskite savo vardą...">
+            <span>ir spauskite mygtuką</span>
+            <button onclick="checkName()">OK</button>
+            <span>.</span>
+        </div>
+        <!-- 3rd -->
+        <h2>Trečia užduotis</h2>
+        <p><span>Sąlyga:</span> sukurk input, kur vartotojas įves savo pilną vardą (t.y. vardą ir pavardę). Padaryk, kad JS pridėtų du h1 tag'us, viename - vardas, kitame - pavardė.</p>
+        <div class="container">
+            <span>Sprendimas:</span>
+            <input id="thirdInputName" type="text" placeholder="Įveskite savo vardą ir pavardę...">
+            <span>ir spauskite mygtuką</span>
+            <button onclick="checkFirstLast()">OK</button>
+            <span>.</span>
+            <h1 id="firstName"></h1>
+            <h1 id="lastName"></h1>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
